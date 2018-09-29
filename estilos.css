@@ -27,6 +27,15 @@ body{
 .cabecera{
 	margin: auto;
 	max-width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+
+.cabecera h1{
+	color: var(--naranja);
 }
 
 .contenido{
@@ -34,4 +43,82 @@ body{
 	max-width: 1000px;
 	/* 2° usamos la variable  agregandole var() */
 	background-color: var(--blanco);
+	border-radius: 8px 8px 0 0; 
+}
+
+.lista{
+	display: flex;
+	background-color: var(--naranja);
+	justify-content: start;
+	align-items: center;
+	height: 35px;
+}
+
+.lista a{
+	color: var(--blanco);
+	text-decoration: none;
+	font-weight:bold;
+	border-right: 1px solid var(--blanco);
+	padding: 7px 12px;
+}
+
+.lista a:hover{
+	text-decoration: underline;
+}
+
+.botonera{
+	background-color: var(--naranja);
+	padding-left: 40px;
+	border-radius: 8px 8px 0 0; 
+	margin-bottom: 30px
+}
+
+.slider{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.zona{
+	background-color: cyan;
+	display: flex;
+}
+
+.izquierda{
+	background-color: papayawhip;
+	flex-grow: 1;
+	margin-right: 20px;
+	padding-left: 30px;
+}
+
+.derecha{
+	background-color: tomato;
+	flex-grow: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.Tags{
+	border-bottom: dashed 1px gray;
+}
+
+.lista-izquierda a{
+	margin: 38px;
+	color: var(--negro);
+	text-decoration: none;
+	
+}
+
+.producto img{
+	float: left;
+	margin-right: 12px;
+}
+
+.producto p{
+	float: left;
+	width: 55%;
+}
+
+.producto h2{
+	margin-bottom: 12px;
 }
